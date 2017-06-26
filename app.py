@@ -6,6 +6,7 @@ import requests
 import random
 from flask import Flask, request
 import threading
+import unicodedata
 
 
 app = Flask(__name__)
@@ -90,7 +91,6 @@ def webhook():
                         if 'action' in stuff:
                             print ("action!")
                             if response.get('action'):
-                                if response['action']==u'start'
                                 #type(response[action]) is unicode
                                     start();
             
