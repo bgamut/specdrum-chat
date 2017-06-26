@@ -95,8 +95,8 @@ def webhook():
                                 action = response['action']
                                 b=action.encode('utf-8')
                                 print (b)
-                                    start();
-                                    send_message(sender_id,"starting now "+b)
+                                start();
+                                send_message(sender_id,"starting now "+b)
             
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
