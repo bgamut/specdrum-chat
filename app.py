@@ -41,7 +41,7 @@ def merge(request):
         del context['ack']
     return context
 
-def start(context,entities):
+def start():
 #def start(request):
 #context=request['context']
 #entities=request['entities']
@@ -88,7 +88,8 @@ def webhook():
                             send_message(sender_id, response['msg'])
                         if 'action' in stuff:
                             print ("action!")
-                            response
+                            if response['action']='start':
+            
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
 
