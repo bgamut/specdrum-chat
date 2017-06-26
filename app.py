@@ -91,7 +91,7 @@ def webhook():
                             print ("action!")
                             if response.get('action'):
                                 action=response['action']
-                                print(Type (action))
+                                print(type(action))
                                 start();
             
                 if messaging_event.get("delivery"):  # delivery confirmation
