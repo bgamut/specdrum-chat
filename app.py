@@ -94,7 +94,7 @@ def webhook():
                                 #type(response[action]) is unicode
                                 action = response['action']
                                 b=action.encode('utf-8')
-                                if b='start'.decode('utf-8')
+                                if b=='start'
                                     print (b)
                                     start();
                                     send_message(sender_id,"starting now")
