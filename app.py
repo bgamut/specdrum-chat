@@ -48,7 +48,7 @@ def start():
 #data=json.load(context)
     test = "this is a test value"
 #print test
-    print "somethign is working"
+    print "something is working"
 
 @app.route('/specdrum-chat', methods=['GET'])
 def verify():
