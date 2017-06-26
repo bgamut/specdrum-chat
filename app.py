@@ -93,8 +93,10 @@ def webhook():
                             if response.get('action'):
                                 #type(response[action]) is unicode
                                 action = response['action']
-                                print (action.encode('utf-8'))
+                                b=action.encode('utf-8')
+                                print (b)
                                     start();
+                                    send_message(sender_id,"starting now "+b)
             
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
