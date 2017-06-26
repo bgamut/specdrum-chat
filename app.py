@@ -90,9 +90,9 @@ def webhook():
                         if 'action' in stuff:
                             print ("action!")
                             if response.get('action'):
-                                action=response['action']
-                                print(type(action))
-                                start();
+                                if response['action']==u'start'
+                                #type(response[action]) is unicode
+                                    start();
             
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
