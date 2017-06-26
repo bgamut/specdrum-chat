@@ -5,6 +5,7 @@ from wit import Wit
 import requests
 import random
 from flask import Flask, request
+import threading
 
 
 app = Flask(__name__)
