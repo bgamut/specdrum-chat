@@ -92,7 +92,8 @@ def webhook():
                             print ("action!")
                             if response.get('action'):
                                 #type(response[action]) is unicode
-                                unicodedata.normalize('NFKD', title).encode('ascii','ignore')
+                                action = response['action']
+                                print (action.encode('utf-8'))
                                     start();
             
                 if messaging_event.get("delivery"):  # delivery confirmation
