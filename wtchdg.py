@@ -39,13 +39,13 @@ class Handler(PatternMatchingEventHandler):
             print "Received event - %s." % event.src_path
             call('./bash.sh', shell=True)
             call('clear', shell=True)
-            sleep(5)
+            sleep(50)
         elif event.event_type == 'modified':
         # Taken any action here when a file is modified.
             print "Received event - %s." % event.src_path
             call('./bash.sh', shell=True)
             call('clear', shell=True)
-            sleep(5)
+            sleep(50)
 
 
 
